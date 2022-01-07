@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sports">
+    <RadioGroup
+        android:id="@+id/sports"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:checkedButton="@id/badminton"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:paddingTop="44dp"
+        app:layout_constraintBottom_toTopOf="@id/bt2"
+
+        >
+
+        <RadioButton
+            android:id="@+id/badminton"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="Badminton"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <RadioButton
+            android:id="@+id/chess"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="Chess"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <RadioButton
+            android:id="@+id/Table_Tennis"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="TT"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent" />
+        <RadioButton
+            android:id="@+id/vb"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="Volley Ball"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent" />
+        <RadioButton
+            android:id="@+id/bb"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="Basket Ball"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent" />
+    </RadioGroup>
+    <Button
+        android:id="@+id/bt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sports"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="10dp"
+        tools:layout_editor_absoluteX="177dp"
+        tools:layout_editor_absoluteY="225dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RadioGroup
+        android:id="@+id/depp"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:checkedButton="@id/sports"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:paddingTop="44dp"
+        app:layout_constraintBottom_toTopOf="@id/b1">
+
+        <RadioButton
+            android:id="@+id/sports"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="sports"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <RadioButton
+            android:id="@+id/mess"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="mess menu"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <RadioButton
+            android:id="@+id/canteen"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="canteen menu"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/b1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="36dp"
+        android:text="select"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/depp"
+        tools:text="button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
